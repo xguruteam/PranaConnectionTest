@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		CACF2C8E22A213BB0089BF1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CACF2C8C22A213BB0089BF1E /* LaunchScreen.storyboard */; };
 		CACF2C9922A213BB0089BF1E /* PranaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2C9822A213BB0089BF1E /* PranaTestTests.swift */; };
 		CACF2CA422A213BB0089BF1E /* PranaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2CA322A213BB0089BF1E /* PranaTestUITests.swift */; };
+		CACF2CB322A2175C0089BF1E /* PranaDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2CB122A2175B0089BF1E /* PranaDevice.swift */; };
+		CACF2CB422A2175C0089BF1E /* PranaDeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2CB222A2175B0089BF1E /* PranaDeviceManager.swift */; };
+		CACF2CB622A219DD0089BF1E /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF2CB522A219DD0089BF1E /* ConnectViewController.swift */; };
+		CE7B2F1AE3BEF688CAD7508E /* Pods_PranaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F29CB424F159D35734E0F95 /* Pods_PranaTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6F29CB424F159D35734E0F95 /* Pods_PranaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PranaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF2C8022A213B90089BF1E /* PranaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PranaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF2C8322A213B90089BF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CACF2C8522A213BA0089BF1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		CACF2C9F22A213BB0089BF1E /* PranaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PranaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CACF2CA322A213BB0089BF1E /* PranaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PranaTestUITests.swift; sourceTree = "<group>"; };
 		CACF2CA522A213BB0089BF1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CACF2CB122A2175B0089BF1E /* PranaDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PranaDevice.swift; sourceTree = "<group>"; };
+		CACF2CB222A2175B0089BF1E /* PranaDeviceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PranaDeviceManager.swift; sourceTree = "<group>"; };
+		CACF2CB522A219DD0089BF1E /* ConnectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		D52387D31A7082B6415E78AE /* Pods-PranaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PranaTest.release.xcconfig"; path = "Target Support Files/Pods-PranaTest/Pods-PranaTest.release.xcconfig"; sourceTree = "<group>"; };
+		D95301F422C2AE465E4AB305 /* Pods-PranaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PranaTest.debug.xcconfig"; path = "Target Support Files/Pods-PranaTest/Pods-PranaTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7B2F1AE3BEF688CAD7508E /* Pods_PranaTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EE7CAC9CD74E6A5986CBEF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D95301F422C2AE465E4AB305 /* Pods-PranaTest.debug.xcconfig */,
+				D52387D31A7082B6415E78AE /* Pods-PranaTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E321993EE6FE1E757273956 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F29CB424F159D35734E0F95 /* Pods_PranaTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CACF2C7722A213B90089BF1E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				CACF2C9722A213BB0089BF1E /* PranaTestTests */,
 				CACF2CA222A213BB0089BF1E /* PranaTestUITests */,
 				CACF2C8122A213B90089BF1E /* Products */,
+				6EE7CAC9CD74E6A5986CBEF1 /* Pods */,
+				7E321993EE6FE1E757273956 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +127,9 @@
 		CACF2C8222A213B90089BF1E /* PranaTest */ = {
 			isa = PBXGroup;
 			children = (
+				CACF2CB522A219DD0089BF1E /* ConnectViewController.swift */,
+				CACF2CB122A2175B0089BF1E /* PranaDevice.swift */,
+				CACF2CB222A2175B0089BF1E /* PranaDeviceManager.swift */,
 				CACF2C8322A213B90089BF1E /* AppDelegate.swift */,
 				CACF2C8522A213BA0089BF1E /* ViewController.swift */,
 				CACF2C8722A213BA0089BF1E /* Main.storyboard */,
@@ -132,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CACF2CA822A213BB0089BF1E /* Build configuration list for PBXNativeTarget "PranaTest" */;
 			buildPhases = (
+				E20CE7F2B733B933FD51C7E8 /* [CP] Check Pods Manifest.lock */,
 				CACF2C7C22A213B90089BF1E /* Sources */,
 				CACF2C7D22A213B90089BF1E /* Frameworks */,
 				CACF2C7E22A213B90089BF1E /* Resources */,
+				17CED0700035CE93ECAD5462 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,13 +286,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17CED0700035CE93ECAD5462 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PranaTest/Pods-PranaTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PranaTest/Pods-PranaTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PranaTest/Pods-PranaTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E20CE7F2B733B933FD51C7E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PranaTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CACF2C7C22A213B90089BF1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACF2CB622A219DD0089BF1E /* ConnectViewController.swift in Sources */,
+				CACF2CB422A2175C0089BF1E /* PranaDeviceManager.swift in Sources */,
 				CACF2C8622A213BA0089BF1E /* ViewController.swift in Sources */,
 				CACF2C8422A213B90089BF1E /* AppDelegate.swift in Sources */,
+				CACF2CB322A2175C0089BF1E /* PranaDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +510,12 @@
 		};
 		CACF2CA922A213BB0089BF1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95301F422C2AE465E4AB305 /* Pods-PranaTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U37J473DVK;
 				INFOPLIST_FILE = PranaTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -440,6 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prana.PranaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,9 +531,12 @@
 		};
 		CACF2CAA22A213BB0089BF1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D52387D31A7082B6415E78AE /* Pods-PranaTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U37J473DVK;
 				INFOPLIST_FILE = PranaTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +544,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.prana.PranaTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

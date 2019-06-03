@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-PranaTest/Pods-PranaTest-frameworks.sh
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/MKProgress/MKProgress.framework
+${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework
